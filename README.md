@@ -14,7 +14,7 @@ this package was written quickly. its just to check uptime from your projects wi
 ```
 1.1) create .env file with 
 
-````
+```
 TWILIO_ACCOUNT_SID=A..
 TWILIO_AUTH_TOKEN=..
 TELEPHONE_NUMBER=+49..
