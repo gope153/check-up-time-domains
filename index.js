@@ -65,12 +65,12 @@ const startCron = (domains = undefined) => {
 		fs.writeFile('./domains.json', JSON.stringify(domains), (err) => {
 			if (err) throw err;
 			console.debug('The file has been saved!');
-		}
+		})
 	}
 	if (!fs.existsSync('./domains.json')) return console.log('domains.json not found, please create it first');
 	if (!fs.existsSync('./logs.json')) fs.writeFileSync('./logs.json', '[]');
 
-	new CronJob('0 */5 * * * *', checkDomains).start();
+	new CronJob('*/5 * * * * *', checkDomains).start();
 }
 
 module.exports = startCron;
