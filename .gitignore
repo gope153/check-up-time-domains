@@ -2,3 +2,4 @@ logs.json
 domains.json
 node_modules/
 .env
+env
